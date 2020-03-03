@@ -71,12 +71,19 @@ function preload() {
   flower2 = loadImage('assets/flower2.png');
 }
 
+
+
 function setup() {
   textFont('Sacramento');
   createCanvas(800, 800);
   rectMode(CORNER);
 
   
+}
+
+function play() {
+  var audio = new Audio('assets/Music.mp3');
+  audio.play();
 }
 
 
@@ -172,10 +179,10 @@ function drawPurple() {
 //**************************************************************TEXT
 
 function drawText(){
-  fill(255);
+  fill(255,30,200);
   text("Dress Up Eleanor!", 20, 60,300, 300);
   textSize(70);
-  fill(255);
+  
   noStroke();
   
 }
@@ -290,6 +297,8 @@ function keyPressed() {
   print("Changing to purple");
   }
 }
+
+   
 
 
 
